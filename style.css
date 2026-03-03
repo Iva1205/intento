@@ -9,6 +9,7 @@ body{
   background: #f4f4f4;
 }
 
+
 /*NAVBAR*/
 
 .navbar{
@@ -21,7 +22,7 @@ body{
 }
 
 .nav-links{
-  display:flex;
+  display-warp:warp;
   gap:20px;
 }
 
@@ -33,14 +34,27 @@ body{
   
   .hero {
     display:flex;
+    flex-direction:colum;
     justify-content:center;
     align-items:center;
-    height:80vh;
+    height:100vh;
     text-align:center;
   }
 .hero-content{
   max-width:500px;
 }
+  .hero h1{
+    font-size:3rem;
+    color:#111;
+    max-widht:700px;
+  }
+  .hero p{
+    margin-top:20px;
+    color:#555;
+    max-width:700px;
+    line-height:1.6;
+  }
+  
 
   button {
     margin-top:20px;
