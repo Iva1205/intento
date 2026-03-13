@@ -1,87 +1,79 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-  background: #f4f4f4;
-}
-
-
-.encabezado{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 40px;
-  background:black;
-  color:white;
-  top:0;
-}
-
-.nav-links{
-  display-warp:warp;
-  gap:20px;
-}
-
-.nav-links a{
-  color:white;
-  text-decoration:none;
-
-  /*HERO*/
-  
-  .portada{
-    display:flex;
-    flex-direction:colum;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
-  }
-.portada-content{
-  max-width:500px;
-}
-  .portada h1{
-    font-size:3rem;
-    color:#111;
-    max-widht:700px;
-  }
-  .portada p{
-    margin-top:20px;
-    color:#555;
-    max-width:700px;
+    font: small-caps 100%/200% serif;
+    background-color: #FEEBE7;
     line-height:1.6;
-  }
-  
-
-  .boton {
-    display:inline-block
-    padding:10px 20px;
-    border-radius:5px;
-    background:green;
-    color:white;
-   text-decoration:none;
-    cursor:pointer;
-  }
-
-#servicios{
-  display:flex;
-  gap:10px;
-  justify-content:center;
 }
-  #proyectos{
-    display:felx;
-    gap:10px;
-  justify-content:center;
-  }
-  
-  .footer{
+   
+header{
+        background-color:#333;
+        color:#fff;
+        padding:0;
+        text-align:center;
+}
+
+      .hero h1{
+          font-size:2em;
+          margin:0;
+          text-align:center;
+}
+
+.hero-content{
+   display:felx;
+    align-items:center
+    }
+
+.hero-content{
+   display:felx;
+    align-items:center
+    }
+
+
+.hero-content img{
+ width:40px;
+    height:200px;
+    object-fit:cover;
+    margin-right:2em;
+}
+
+.hero-content p{
+    width:60px;
+    }
+
+.proyectos{
+    display:flex;
+    flex-warp:warp;
+    justify-content:center;
+    gap:20px;
+}
+
+.proyect-content{
+    margin:1;
+    width:100%;
+    background-color:#f2f2f2;
+    padding:1;
+    border:1px solid #ddd;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba (0,0,0,0.1);
+    }
+
+.proyect-content img{
+    width:40%;
+    height:200px;
+    object-fit:cover;
+    margin-right:2;
+    }
+
+.proyect-content p{
+    widht:60%;
+    }
+
+footer{
+    background-color:#black;
+    color:#fff;
+    padding:0;
     text-align:center;
-    padding:20px;
-    background:#222;
-    color:white;
-  }
+    }
+    
   
   
     
