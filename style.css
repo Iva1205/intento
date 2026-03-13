@@ -18,7 +18,7 @@ header{
 }
 
 .hero-content{
-   display:felx;
+   display:flex;
     align-items:center
     }
 
@@ -29,15 +29,11 @@ header{
 
 
 .hero-content img{
- width:40px;
+ width:40%;
     height:200px;
     object-fit:cover;
     margin-right:2em;
 }
-
-.hero-content p{
-    width:60px;
-    }
 
 .proyectos{
     display:flex;
@@ -69,7 +65,7 @@ header{
 
 footer{
     background-color:#black;
-    color:#fff;
+    color:#black;
     padding:0;
     text-align:center;
     }
