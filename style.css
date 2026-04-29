@@ -1,72 +1,118 @@
-.combo-venta{
-    background-color:#1a1a1a;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-    border-radius:20px;
-    margin:30px 10px;
-    border:2px solid gold;
-    animation:entradaCEO 1s ease-out;
-    }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a; /* NEGRO COMPLETO, ADIÓS BLANCO */
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: entradaCEO 1s ease;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #FFD700;
+            text-shadow: 0 0 10px #FFD700;
+        }
+        .card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border: 2px solid #FFD700;
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+            animation: entradaCEO 1s ease 0.3s both;
+            margin-bottom: 25px;
+        }
+        .card h2 {
+            color: #FFD700;
+            font-size: 22px;
+            margin-bottom: 15px;
+            animation: brillo 2s infinite;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 15px 0;
+            border: 2px solid #333;
+        }
+        .precio {
+            font-size: 28px;
+            color: #FFD700;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .incluye {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .boton-ws {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+        .boton-ws:hover {
+            transform: scale(1.08); /* RONRONEO CEO 🐱 */
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        .garantia {
+            font-size: 12px;
+            color: #888;
+            margin-top: 15px;
+        }
+        /* NUEVA SECCIÓN PA’ LLENAR ESPACIO */
+        .porque {
+            max-width: 400px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .porque h3 {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+        .beneficio {
+            background: #1a1a1a;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 8px 0;
+            border-left: 3px solid #FFD700;
+        }
+        .footer {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin-top: auto;
+            padding-top: 20px;
+        }
+        @keyframes brillo {
+            0%, 100% { text-shadow: 0 0 10px #FFD700; }
+            50% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFA500; }
+        }
+        @keyframes entradaCEO {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-.combo-venta h2{
-    font-size:1.8rem;
-    margin-bottom:10px;
-    animation:brillo 2s infinite;
-    }
-
-.precio{
-    font-size:2.5rem;
-    color:gold;
-    font-wight:bold;
-    margin:15px 0;
-    }
-
-.boton-venta{
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:20px 30px;
-    font-size:1.3 rem;
-    font-weight:bold;
-    
-    border-radius:20px;
-    margin:20px 0;
-    box-shadow:0 5px 15px rgb(37,211,102,0.4);
-    transition:transform 0.3s;
-    animation:entradaCEO 1s ease-out;
-    
-    }
 
 
-.boton-venta:hover{
-     transform:scale(1.08);
-    box-shadow:0 8px 25px rgb(37,211,102,0.6);
-    }
-
-.nota{
-    font-size:0.9rem;
-    opacity:0.8;
-    margin-top:15px;
-    }
-
-/*KEYFRAMES*/
-
-@keyframes entradaCEO{
-    from{opacity:0;transform:translateY(30px);}
-         to{opacity:1;transform:translateY(0);}
-    }
-
-@keyframes pulso{
-     0%, 100%{transform:scale(1);}
-    50%{transform:scale(1.05);}
-    }
-
-@keyframes brillo{
-     0%, 100%{text-shadow:0 0 5px gold;}
-    50%{text-shadow:0 0 20px gold;}
-    }
 
     
   
